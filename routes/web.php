@@ -19,5 +19,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+/*rute home */
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/* rute soporte add edit delit */
+Route::post('/agregar', [App\Http\Controllers\SoporteController::class, 'agregar'])->name('agregar');
