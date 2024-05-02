@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.0/css/dataTables.bootstrap5.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.0/css/responsive.bootstrap5.css">
 @endsection
-<div class="container">
+<div class="container card card-body">
+    <div>
+        <button class="btn btn-success">Excel</button>
+    </div>
+    <hr>
     <table id="example" class="table table-striped nowrap" style="width:100%">
         <thead>
             <tr>
@@ -412,6 +416,6 @@
     <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.0.0/js/dataTables.bootstrap5.js"></script>
     <script src="https://cdn.datatables.net/responsive/3.0.0/js/dataTables.responsive.js"></script>
-    <script src="https://cdn.datatables.net/responsive/3.0.0/js/responsive.bootstrap5.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.0/js/responsive.dataTables.js"></script>
 @endsection
 @endsection

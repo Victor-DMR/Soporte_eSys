@@ -9,6 +9,7 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/js/table/home_table.js',
                 'resources/js/helper/helper.js',
+                'resources/css/auth.css',
             ],
             refresh: true,
         }),

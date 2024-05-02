@@ -1,13 +1,18 @@
 @extends('layouts.app')
-
+@vite(['resources/css/auth.css'])
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="mt-4 mb-2 d-flex justify-content-center">
+                    <h1>{{ __('Login') }}</h1>
+                </div>
 
                 <div class="card-body">
+                   <div class="conten_logo mb-5 d-flex justify-content-center">
+                    <img class="" src="{{ asset('img/logo.webp') }}" alt="">
+                   </div>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
