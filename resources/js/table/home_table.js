@@ -4,6 +4,8 @@ let urlgeneral = location.origin;
 
 new DataTable('#example', {
     responsive: true,
+    scrollX: true,
+    scrollY: 500
 });
 
 document.addEventListener('click', async (e) => {
