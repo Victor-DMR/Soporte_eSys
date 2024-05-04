@@ -21,6 +21,9 @@
             <input type="text" class="form-control" id="Tecnico" placeholder="Tecnico">
           </div>
           <div class="mb-3">
+            <input class="form-control"  type="file" id="archivo" name="archivo">
+          </div>
+          <div class="mb-3">
             <textarea class="form-control" id="Descripcion" placeholder="Descripción" rows="3"></textarea>
           </div>
 

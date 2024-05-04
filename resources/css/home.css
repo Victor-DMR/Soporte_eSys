@@ -1,0 +1,23 @@
+#tableSoporte th,
+#tableSoporte td {
+    text-align: left;
+    max-width: 200px; /* Define el ancho máximo deseado */
+    overflow: hidden; /* Oculta el contenido que excede el ancho */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) para indicar que el texto se ha truncado */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+#tableSoporte td:hover{
+    cursor: pointer;
+}
+
+.btn_estado{
+    margin-right: 3px;
+    height: 25px;
+}
+
+/* .dropdown ul{
+    z-index: 100; 
+    display: flex;
+} */
+
