@@ -18,7 +18,10 @@
             <input type="text" class="form-control" id="AnyDesk1" placeholder="AnyDesk">
           </div>
           <div class="mb-3">
-            <input type="text" class="form-control" id="Tecnico1" placeholder="Tecnico">
+            <input type="number" class="form-control" id="Telefono" placeholder="Telefono">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="Tecnico" placeholder="Tecnico">
           </div>
           <div class="mb-3">
             <input class="form-control"  type="file" id="archivo" name="archivo">

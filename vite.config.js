@@ -10,6 +10,7 @@ export default defineConfig({
                 'resources/css/auth.css',
                 'resources/js/table/home_table.js',
                 'resources/css/home.css',
+                'resources/js/modal/agregar.js',
             ],
             refresh: true,
         }),

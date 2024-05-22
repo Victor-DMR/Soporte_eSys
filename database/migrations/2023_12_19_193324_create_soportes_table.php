@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('soportes', function (Blueprint $table) {
             $table->id();
-            $table->integer('nitcli')->unsigned();
+            $table->integer('nitcli');
             $table->string('cliente', 50);
             $table->string('descrip_service', 200);
-            $table->integer('anydesk')->unsigned();
+            $table->integer('anydesk');
+            $table->integer('telefono');
             $table->string('observacion', 200);
             $table->string('estado_service', 2);
             $table->string('tecnico', 15);
