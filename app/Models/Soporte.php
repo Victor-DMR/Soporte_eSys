@@ -14,6 +14,7 @@ class Soporte extends Model
         'cliente',
         'descrip_service',
         'anydesk',
+        'telefono',
         'observacion',
         'estado_service',
         'tecnico',

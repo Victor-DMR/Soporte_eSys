@@ -15,11 +15,13 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('solicitar_soporte');
 });
 
 Auth::routes();
-/*rute home */
+/* solicitar soporte */
+Route::get('/solicitar_soporte', [App\Http\Controllers\HomeController::class, 'solictar_soporte'])->name('solictar_soporte');
+/* rute home */
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 /* rute soporte add edit delit */
 Route::post('/agregar', [App\Http\Controllers\SoporteController::class, 'agregar'])->name('agregar');
