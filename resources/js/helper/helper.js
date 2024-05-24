@@ -1,29 +1,61 @@
 const TOKEN = () => document.querySelector('meta[name="csrf-token"]').getAttribute("content");
 
-export async function post(url, data) {
+export async function postDatos(url, formData) {
     try {
         let res = await fetch(url, {
             method: 'POST',
-            body: JSON.stringify({ data }),
+            body: formData,
             headers: {
-                "Content-Type": "application/json",
                 "X-CSRF-TOKEN": TOKEN(),
             }
         });
 
         if (!res.ok) {
-            // Manejar el caso en que la respuesta no es exitosa (puede lanzar una excepción)
-            console.log('Error en la solicitud');
+            let menssage = 'Proceso fallido';
+            let icon = 'warning';
+            alert(menssage, icon);
             throw new Error(`Error en la solicitud: ${res.status}`);
+        }else{
+            let menssage = 'Proceso exitoso';
+            let icon = 'success';
+            alert(menssage, icon);
         }
-
-        return res;
+  
+        return await res.json();
     } catch (error) {
         console.error("Error en la solicitud:", error.message);
-        // Puedes lanzar el error nuevamente o manejarlo de alguna manera específica
         throw error;
     }
 }
 
+export async function getDatos(url){
+    try {
+        let res = await fetch(url, {
+            method: 'GET',
+        });
+        return await res.json();
+    } catch (error) {
+        console.error("Error en la solicitud:", error.message);
+        throw error;
+    }
+};
+
+function alert(menssage, icon){
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: icon,
+        title: menssage
+      });
+}
 
 

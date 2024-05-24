@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('soportes', function (Blueprint $table) {
             $table->id();
-            $table->integer('nitcli');
-            $table->string('cliente', 50);
-            $table->string('descrip_service', 200);
-            $table->integer('anydesk');
-            $table->integer('telefono');
-            $table->string('observacion', 200);
-            $table->string('estado_service', 2);
-            $table->string('tecnico', 15);
+            $table->string('nitcli', 20)->nullable();
+            $table->string('cliente', 50)->nullable();
+            $table->string('descrip_service', 200)->nullable();
+            $table->string('anydesk', 20)->nullable();
+            $table->string('telefono', 20)->nullable();
+            $table->string('observacion', 200)->nullable();
+            $table->string('estado_service', 2)->nullable();
+            $table->string('tecnico', 15)->nullable();
             $table->timestamps();
         });
     }

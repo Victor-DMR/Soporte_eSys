@@ -1,23 +1,18 @@
-import {post} from '../helper/helper';
-
+import { getDatos } from "../helper/helper";
 let urlgeneral = location.origin;
 let cambiar_color=null;
 let tr_conten=null;
 
-new DataTable('#tableSoporte', {
-   /*  responsive: true, */
-    scrollX: true,
-    scrollY: 500
+document.addEventListener('DOMContentLoaded', async (e)=>{
+    let soportes = await getDatos(urlgeneral + '/soportes');
+    console.log(soportes);
+
+    new DataTable('#tableSoporte', {
+            scrollX: true,
+            scrollY: 500
+    });
 });
 
-document.addEventListener('click', async (e) => {
-    if (e.target.closest('#btn_save_agregar')) {
-        let url = urlgeneral+'/agregar';
-        let data = 'hola';
-        let  res = await post(url, data);
-        console.log(res);
-    }
-});
 
 document.addEventListener('change', (e) => {
     if (e.target.closest('.cambiar_color')) {
