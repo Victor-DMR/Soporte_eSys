@@ -30,7 +30,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="tr_conten">
+                       {{--  <tr class="tr_conten">
                             <td>1192779655</td>
                             <td>esys soluciones tecnologicas</td>
                             <td>tienen problemas con la actualizacion tienen problemas con la actualizacion</td>
@@ -101,7 +101,7 @@
                                   </select>
                                 </div>
                             </td>
-                            <td class="{{-- d-flex gap-1 border-0 --}}">
+                            <td class="">
                                 <button class="btn btn-danger btn-sm">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-trash3-fill" viewBox="0 0 16 16">
@@ -135,7 +135,7 @@
                                       </svg>
                                 </button>
                             </td>
-                        </tr>
+                        </tr> --}}
                     </tbody>
                 </table>
             </div>
@@ -148,7 +148,7 @@
 @include('modal.edit')
 
 @section('scipt')
-@vite(['resources/js/table/home_table.js'])
+    @vite(['resources/js/table/home_table.js', 'resources/js/modal/agregar.js'])
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>

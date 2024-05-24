@@ -18,13 +18,13 @@
             <input type="text" class="form-control" id="AnyDesk1" placeholder="AnyDesk">
           </div>
           <div class="mb-3">
-            <input type="number" class="form-control" id="Telefono" placeholder="Telefono">
+            <input type="number" class="form-control" id="Telefono1" placeholder="Telefono">
           </div>
           <div class="mb-3">
-            <input type="text" class="form-control" id="Tecnico" placeholder="Tecnico">
+            <input type="text" class="form-control" id="Tecnico1" placeholder="Tecnico">
           </div>
           <div class="mb-3">
-            <input class="form-control"  type="file" id="archivo" name="archivo">
+            <input class="form-control"  type="file" id="archivo1" name="archivo">
           </div>
           <div class="mb-3">
             <textarea class="form-control" id="Descripcion1" placeholder="Descripción" rows="3"></textarea>

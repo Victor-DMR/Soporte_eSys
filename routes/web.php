@@ -25,3 +25,5 @@ Route::get('/solicitar_soporte', [App\Http\Controllers\HomeController::class, 's
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 /* rute soporte add edit delit */
 Route::post('/agregar', [App\Http\Controllers\SoporteController::class, 'agregar'])->name('agregar');
+/* rute obtener los soportes */
+Route::get('/soportes', [App\Http\Controllers\SoporteController::class, 'soportes'])->name('soportes');
